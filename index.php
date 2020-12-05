@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
@@ -44,12 +45,13 @@
                          echo "<option value='".$val."'>".$val."</option>";
                      }
 
-                     function displayNombrePelicula($val) {
-                        echo '<h1 class="mt-3">'.strtoUpper($val).'</h1>';
-                        echo '<img src=/images/'.$val.'.jpg';
+                     function displayNombrePelicula($nombrePelicula) {
+                        echo '<h1 class="mt-3">'.strtoUpper($nombrePelicula).'</h1>';
+                        echo '<div class="container imgMovie" style="text-align: center;"><img src=/images/'.$nombrePelicula.'.jpg>';
                      }
 
               ?>
+              
               </select>
                 <br />
                 <button class="btn btn-primary btn-sm mt-3" name="btnPelicula" value="btnPelicula" type="submit">Enviar mi Seleccion de pelicula</button>
@@ -59,6 +61,7 @@
                      
                      $pelicula = $_POST['peliculas'];
                      if (isset($pelicula)) {
+                         $pelicula = str_replace(' ', '', $pelicula);
                          displayNombrePelicula($pelicula);
                      }
 
