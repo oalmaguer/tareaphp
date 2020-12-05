@@ -1,5 +1,85 @@
 
+.navbar {
+    background: #0F2027 !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027) !important; 
+}
+
 .imgMovie img{
     height: 200px;
     width: 200px;
 }
+
+.jumbotron {
+    background: #0F2027 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.hero {
+    color: white;
+}
+
+
+.btn-primary {
+    background-color: #2fad5f !important;
+    border-color: white !important;
+    
+}
+
+.btn-primary:hover {
+    background-color:  #021729 !important;
+    transition: background-color 2s;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.card img {
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+   
+}
+
+.card img:hover {
+   
+    transform: scale(1.2);
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.card,  .card-footer{
+    background: #0F2027 !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-footer {
+    height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+/* 
+@keyframes movieSize {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); } */
